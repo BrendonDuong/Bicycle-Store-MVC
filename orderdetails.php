@@ -11,7 +11,7 @@
 <?php 
     $login_check = Session::get('customer_login');
     if($login_check==false){
-		echo "<script>window.location.href ='login.php';</script>";//header('Location:login.php');
+		echo "<script>window.location ='login.php';</script>";//header('Location:login.php');
   }
   $ct = new cart();
   if(isset($_GET['confirmid'])){
@@ -155,7 +155,8 @@ if(isset($_GET['cancelorderid'])){
 							<a href="payment.php"> <img src="images/check.png" alt="" /></a>
 						</div>
 					</div> -->
-    	</div>  	
+					</div>
+				</div>  	
        <div class="clear"></div>
     </div>
  </div>
